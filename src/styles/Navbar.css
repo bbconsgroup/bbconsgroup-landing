@@ -79,3 +79,27 @@
 .navbar-links a:last-child {
   margin-right: 0;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically for smaller screens */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .navbar div {
+    margin-bottom: 10px; /* Add spacing between stacked items */
+  }
+
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically for smaller screens */
+    order: 4; /* Change order of items */
+    margin-top: 10px; /* Add spacing between stacked items */
+  }
+
+  .navbar-icons,
+  .navbar-whatsapp {
+    order: 3; /* Change order of items */
+    margin-top: 10px; /* Add spacing between stacked items */
+  }
+}
