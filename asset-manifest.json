@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bbconsgroup-landing/static/css/main.0e68f312.css",
+    "main.css": "/bbconsgroup-landing/static/css/main.c4fd9730.css",
     "main.js": "/bbconsgroup-landing/static/js/main.b4aaf5a4.js",
     "static/js/453.3617068a.chunk.js": "/bbconsgroup-landing/static/js/453.3617068a.chunk.js",
     "static/media/logo.svg": "/bbconsgroup-landing/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/bbconsgroup-landing/index.html",
-    "main.0e68f312.css.map": "/bbconsgroup-landing/static/css/main.0e68f312.css.map",
+    "main.c4fd9730.css.map": "/bbconsgroup-landing/static/css/main.c4fd9730.css.map",
     "main.b4aaf5a4.js.map": "/bbconsgroup-landing/static/js/main.b4aaf5a4.js.map",
     "453.3617068a.chunk.js.map": "/bbconsgroup-landing/static/js/453.3617068a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e68f312.css",
+    "static/css/main.c4fd9730.css",
     "static/js/main.b4aaf5a4.js"
   ]
 }
