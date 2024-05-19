@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/bbconsgroup-landing/static/css/main.c4fd9730.css",
-    "main.js": "/bbconsgroup-landing/static/js/main.b4aaf5a4.js",
+    "main.css": "/bbconsgroup-landing/static/css/main.eec652d9.css",
+    "main.js": "/bbconsgroup-landing/static/js/main.a83d7ba5.js",
     "static/js/453.3617068a.chunk.js": "/bbconsgroup-landing/static/js/453.3617068a.chunk.js",
-    "static/media/logo.svg": "/bbconsgroup-landing/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/BB-logo15 (без фона).png": "/bbconsgroup-landing/static/media/BB-logo15 (без фона).50dc972745fa4c19a9ff.png",
+    "static/media/4022164.jpg": "/bbconsgroup-landing/static/media/4022164.0ba34d1ae0a64a1d13b5.jpg",
     "index.html": "/bbconsgroup-landing/index.html",
-    "main.c4fd9730.css.map": "/bbconsgroup-landing/static/css/main.c4fd9730.css.map",
-    "main.b4aaf5a4.js.map": "/bbconsgroup-landing/static/js/main.b4aaf5a4.js.map",
+    "main.eec652d9.css.map": "/bbconsgroup-landing/static/css/main.eec652d9.css.map",
+    "main.a83d7ba5.js.map": "/bbconsgroup-landing/static/js/main.a83d7ba5.js.map",
     "453.3617068a.chunk.js.map": "/bbconsgroup-landing/static/js/453.3617068a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4fd9730.css",
-    "static/js/main.b4aaf5a4.js"
+    "static/css/main.eec652d9.css",
+    "static/js/main.a83d7ba5.js"
   ]
 }
