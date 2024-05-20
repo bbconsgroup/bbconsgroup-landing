@@ -1,63 +1,76 @@
-import React from 'react';
+import React, { useState } from 'react';
 import companyLogo from './assets/images/BB-logo15 (без фона).png'; // Path to your company logo
-import { FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa'; // React Icons for social media
+import { FaInstagram, FaWhatsapp, FaEnvelope, FaBars, FaTimes, FaGavel, FaRegHandshake, FaSyncAlt, FaChalkboardTeacher } from 'react-icons/fa'; // Added missing icons
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="bg-white p-4 shadow-md fixed w-full z-50">
-      <div className="container mx-auto flex flex-wrap justify-between items-center">
-        <div className="flex items-center mb-4 md:mb-0">
-          <img src={companyLogo} alt="Company Logo" className="h-10" />
-          <span className="ml-3 text-xl font-bold text-gray-800">BB Consulting Group</span>
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="flex items-center">
+          <img src={companyLogo} alt="Company Logo" className="h-8 md:h-10" />
+          <span className="ml-3 text-sm md:text-xl font-bold text-gray-800">BB Consulting Group</span>
         </div>
-        <div className="flex space-x-4 text-sm">
+        <div className="flex items-center space-x-4">
           <a 
             href="https://instagram.com/bbconsgroup" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center text-pink-600 hover:text-pink-700 transition-colors duration-300 px-3 py-2 border border-transparent hover:border-pink-600 rounded"
+            className="text-pink-600 hover:text-pink-700 transition-colors duration-300"
           >
-            <FaInstagram className="mr-1" /> Instagram
+            <FaInstagram className="text-xl md:text-2xl" />
           </a>
           <a 
             href="https://wa.me/77018804699" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center text-green-500 hover:text-green-600 transition-colors duration-300 px-3 py-2 border border-transparent hover:border-green-500 rounded"
+            className="text-green-500 hover:text-green-600 transition-colors duration-300"
           >
-            <FaWhatsapp className="mr-1" /> WhatsApp
+            <FaWhatsapp className="text-xl md:text-2xl" />
           </a>
           <a 
             href="mailto:bbcngr@mail.ru" 
-            className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 px-3 py-2 border border-transparent hover:border-blue-500 rounded"
+            className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
           >
-            <FaEnvelope className="mr-1" /> Email
+            <FaEnvelope className="text-xl md:text-2xl" />
+          </a>
+          <button onClick={toggleMenu} className="md:hidden text-gray-800 focus:outline-none">
+            {isOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
+          </button>
+        </div>
+      </div>
+      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} mt-4`}>
+        <div className="flex flex-col items-center space-y-2 text-lg font-medium text-gray-700">
+          <a href="#tenders" className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-300">
+            <FaGavel className="mr-2" /> Тендеры
+          </a>
+          <a href="#consulting" className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-300">
+            <FaRegHandshake className="mr-2" /> Консалтинг
+          </a>
+          <a href="#outsourcing" className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-300">
+            <FaSyncAlt className="mr-2" /> Аутсорсинг
+          </a>
+          <a href="#training" className="flex items-center text-gray-700 hover:text-gray-900 transition-colors duration-300">
+            <FaChalkboardTeacher className="mr-2" /> Обучение
           </a>
         </div>
       </div>
-      <div className="container mx-auto mt-4 flex flex-wrap justify-center space-x-0 md:space-x-6 text-lg font-medium text-gray-700">
-        <a 
-          href="#tenders" 
-          className="block md:inline-block hover:text-gray-900 transition-colors duration-300 px-3 py-2 border border-transparent hover:border-gray-300 rounded mb-2 md:mb-0"
-        >
+      <div className="hidden md:flex container mx-auto mt-4 justify-center space-x-6 text-lg font-medium text-gray-700">
+        <a href="#tenders" className="hover:text-gray-900 transition-colors duration-300 px-3 py-2 border border-transparent hover:border-gray-300 rounded">
           Тендеры
         </a>
-        <a 
-          href="#consulting" 
-          className="block md:inline-block hover:text-gray-900 transition-colors duration-300 px-3 py-2 border border-transparent hover:border-gray-300 rounded mb-2 md:mb-0"
-        >
+        <a href="#consulting" className="hover:text-gray-900 transition-colors duration-300 px-3 py-2 border border-transparent hover:border-gray-300 rounded">
           Консалтинг
         </a>
-        <a 
-          href="#outsourcing" 
-          className="block md:inline-block hover:text-gray-900 transition-colors duration-300 px-3 py-2 border border-transparent hover:border-gray-300 rounded mb-2 md:mb-0"
-        >
+        <a href="#outsourcing" className="hover:text-gray-900 transition-colors duration-300 px-3 py-2 border border-transparent hover:border-gray-300 rounded">
           Аутсорсинг
         </a>
-        <a 
-          href="#training" 
-          className="block md:inline-block hover:text-gray-900 transition-colors duration-300 px-3 py-2 border border-transparent hover:border-gray-300 rounded"
-        >
+        <a href="#training" className="hover:text-gray-900 transition-colors duration-300 px-3 py-2 border border-transparent hover:border-gray-300 rounded">
           Обучение
         </a>
       </div>
