@@ -7,7 +7,7 @@ import {
   FaBriefcase,
   FaChalkboardTeacher,
 } from "react-icons/fa";
-import bgImage from "./assets/images/4022164.jpg"; // Adjust the path as necessary
+import bgImage from "./assets/images/4375.jpg"; // Adjust the path as necessary
 
 const NewServices = () => {
   const [showFullText1, setShowFullText1] = useState(false);
@@ -23,7 +23,7 @@ const NewServices = () => {
 
   return (
     <section
-      className="py-20 px-4"
+      className="pt-6 pb-20 px-4"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
@@ -116,17 +116,29 @@ const NewServices = () => {
                 <FaBriefcase className="text-purple-500 mr-2" /> Сопровождение
                 тендеров «под ключ»
               </h4>
-              <p className={`text-gray-600 mb-4 ${showFullText1 ? '' : 'line-clamp-3'}`}>
+              <p
+                className={`text-gray-600 mb-4 ${
+                  showFullText1 ? "" : "line-clamp-3"
+                }`}
+              >
                 Тендерное сопровождение под ключ представляет собой полный
                 комплекс экспертных услуг от специалистов в области тендеров и
                 закупок. Цель такого сопровождения - обеспечить вашу компанию
                 всем необходимым для победы в тендерных процедурах.
               </p>
-              <p className={`text-gray-600 mb-4 ${showFullText1 ? '' : 'hidden'}`}>
+              <p
+                className={`text-gray-600 mb-4 ${
+                  showFullText1 ? "" : "hidden"
+                }`}
+              >
                 В рамках сопровождения тендеров «под ключ» наши специалисты
                 выполняют следующие виды работ:
               </p>
-              <ul className={`list-disc list-inside text-gray-600 mb-4 ${showFullText1 ? '' : 'hidden'}`}>
+              <ul
+                className={`list-disc list-inside text-gray-600 mb-4 ${
+                  showFullText1 ? "" : "hidden"
+                }`}
+              >
                 <li>
                   Мониторинг и подбор актуальных тендеров, соответствующих
                   интересам и специфике деятельности клиента.
@@ -167,10 +179,18 @@ const NewServices = () => {
                 </li>
                 <li>Заполнение отчета о местном содержании.</li>
               </ul>
-              <p className={`text-gray-600 mb-4 ${showFullText1 ? '' : 'hidden'}`}>
+              <p
+                className={`text-gray-600 mb-4 ${
+                  showFullText1 ? "" : "hidden"
+                }`}
+              >
                 Преимущества комплексного тендерного сопровождения:
               </p>
-              <ul className={`list-disc list-inside text-gray-600 mb-4 ${showFullText1 ? '' : 'hidden'}`}>
+              <ul
+                className={`list-disc list-inside text-gray-600 mb-4 ${
+                  showFullText1 ? "" : "hidden"
+                }`}
+              >
                 <li>
                   Экономия времени и ресурсов. Привлечение профессионалов в
                   области тендерного сопровождения позволяет сэкономить
@@ -190,11 +210,10 @@ const NewServices = () => {
                   подготовке документации и грамотному представлению заявки.
                 </li>
                 <li>
-                  Соблюдение законодательных норм. Эксперты гарантируют
-                  строгое следование всем требованиям и нормативам,
-                  установленным для участников тендерных процедур,
-                  обеспечивая полное соответствие вашей заявки действующему
-                  законодательству.
+                  Соблюдение законодательных норм. Эксперты гарантируют строгое
+                  следование всем требованиям и нормативам, установленным для
+                  участников тендерных процедур, обеспечивая полное соответствие
+                  вашей заявки действующему законодательству.
                 </li>
               </ul>
               <button
@@ -229,12 +248,7 @@ const NewServices = () => {
                 тендерах, снизить риски и успешно развивать бизнес за счет
                 получения выгодных контрактов.
               </p>
-              <button
-                onClick={toggleText2}
-                className="text-blue-500 hover:text-blue-700 transition-colors duration-300 mt-4 bg-white border border-blue-500 rounded-md px-4 py-2"
-              >
-                {showFullText2 ? "Скрыть" : "Показать больше"}
-              </button>
+       
               {showFullText2 && (
                 <>
                   <p className="text-gray-600 mb-4">
@@ -315,7 +329,7 @@ const NewServices = () => {
                     </div>
                   </div>
 
-                  <div className="bg-white p-6 rounded-lg shadow-md mb-8 flex flex-col md:flex-row md:space-x-4 divide-y md:divide-y-0 md:divide-x divide-gray-300">
+                  <div className="bg-white p-6 rounded-lg shadow-md mb-8 flex flex-col lg:flex-row md:space-x-4 divide-y lg:divide-y-0 lg:divide-x divide-gray-300">
                     <p className="text-gray-600 px-4 py-2">
                       1) Мы обучаем как начинающих специалистов, так и тех, кто
                       уже имеет солидный практический опыт в сфере тендеров.
@@ -342,6 +356,12 @@ const NewServices = () => {
                   </div>
                 </>
               )}
+                     <button
+                onClick={toggleText2}
+                className="text-blue-500 hover:text-blue-700 transition-colors duration-300 mt-4 bg-white border border-blue-500 rounded-md px-4 py-2"
+              >
+                {showFullText2 ? "Скрыть" : "Показать больше"}
+              </button>
             </div>
           </div>
         </div>
