@@ -44,7 +44,7 @@ const NewServices = () => {
               <li>Получение ЭЦП</li>
             </ul>
 
-            <h3 className="text-3xl font-bold mb-4 text-gray-800 flex items-center">
+            <h3 id="consulting" className="text-3xl font-bold mb-4 text-gray-800 flex items-center">
               <FaRegHandshake className="text-green-500 mr-2" /> Консалтинг
             </h3>
             <ul className="list-disc list-inside text-gray-600 mb-8">
@@ -60,7 +60,7 @@ const NewServices = () => {
               </li>
             </ul>
 
-            <h3 className="text-3xl font-bold mb-4 text-gray-800 flex items-center">
+            <h3 id="tenders" className="text-3xl font-bold mb-4 text-gray-800 flex items-center">
               <FaGavel className="text-red-500 mr-2" /> Тендеры
             </h3>
             <div className="mb-8">
@@ -181,7 +181,7 @@ const NewServices = () => {
               </ul>
             </div>
 
-            <h3 className="text-3xl font-bold mb-4 text-gray-800 flex items-center">
+            <h3 id = "training" className="text-3xl font-bold mb-4 text-gray-800 flex items-center">
               <FaChalkboardTeacher className="text-orange-500 mr-2" /> Обучение
               тендерам
             </h3>
