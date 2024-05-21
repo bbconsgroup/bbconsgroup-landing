@@ -6,12 +6,14 @@ import {
   FaClipboardList,
   FaBriefcase,
   FaChalkboardTeacher,
+  FaSyncAlt,
 } from "react-icons/fa";
 import bgImage from "./assets/images/4375.jpg"; // Adjust the path as necessary
 
 const NewServices = () => {
   const [showFullText1, setShowFullText1] = useState(false);
   const [showFullText2, setShowFullText2] = useState(false);
+  const [showFullText3, setShowFullText3] = useState(false);
 
   const toggleText1 = () => {
     setShowFullText1(!showFullText1);
@@ -19,6 +21,10 @@ const NewServices = () => {
 
   const toggleText2 = () => {
     setShowFullText2(!showFullText2);
+  };
+
+  const toggleText3 = () => {
+    setShowFullText3(!showFullText3);
   };
 
   return (
@@ -223,7 +229,120 @@ const NewServices = () => {
                 {showFullText1 ? "Скрыть" : "Показать больше"}
               </button>
             </div>
-
+            <h3
+              id="outsourcing"
+              className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 flex items-center"
+            >
+              <FaSyncAlt className="text-purple-500 mr-2" /> Аутсорсинг тендеров
+            </h3>
+            <div className="mb-8">
+              <p className="text-gray-600 mb-4">
+                Аутсорсинг тендеров – это передача функций по подготовке и
+                участию в тендерах сторонней специализированной организации или
+                отдельным экспертам на условиях оказания услуг. При аутсорсинге
+                тендеров компания привлекает внешних профессионалов, обладающих
+                необходимой квалификацией и опытом работы с тендерами, вместо
+                того чтобы создавать собственный тендерный отдел.
+              </p>
+              {showFullText3 && (
+                <>
+                  <p className="text-gray-600 mb-4">
+                    В рамках аутсорсинга тендеров наша команда берет на себя
+                    следующие задачи:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-600 mb-4">
+                    <li>
+                      Ежедневный мониторинг тендерных площадок по все территории
+                      РК и подбор актуальных тендеров, соответствующих интересам
+                      и специфике деятельности клиента. В этот список попадают
+                      все тендеры, объявленные в Казахстане и соответствующие
+                      Вашим условиям. Мы собираем тендеры из: 4 порталов с
+                      государственными закупками 148 сайтов с закупками частных
+                      компаний и банков 1640 медицинских источников (сайтов)
+                    </li>
+                    <li>
+                      Детальный анализ тендерной документации и требований
+                      заказчика.
+                    </li>
+                    <li>
+                      Подготовку полного комплекта документов с учетом специфики
+                      закупки для участия в тендере.
+                    </li>
+                    <li>Сбор необходимых дополнительных документов.</li>
+                    <li>
+                      Оформление и подача заявок на участие в строгом
+                      соответствии с тендерной документации.
+                    </li>
+                    <li>
+                      Представление интересов компании при взаимодействии с
+                      организатором тендера и консультационную поддержку на всех
+                      этапах тендерной процедуры.
+                    </li>
+                    <li>
+                      Отслеживание результатов (протокол допуска, протокол
+                      итогов).
+                    </li>
+                    <li>
+                      Сопровождение на этапе рассмотрения и оценки заявок.
+                    </li>
+                    <li>
+                      Оказание правовой поддержки в случае возникновения споров.
+                    </li>
+                    <li>
+                      Заключение контракта по результатам выигранного тендера.
+                    </li>
+                    <li>
+                      Подготовка электронных актов на порталах: goszakup.gov.kz,
+                      zakup.sk.kz.
+                    </li>
+                    <li>Заполнение отчета о местном содержании.</li>
+                  </ul>
+                  <p className="text-gray-600 mb-4">
+                    Основными преимуществами аутсорсинга тендеров являются:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-600 mb-4">
+                    <li>
+                      Экономия ресурсов. Компания экономит на содержании
+                      собственного тендерного отдела и штата специалистов.
+                      Оплачиваются только услуги при участии в конкретных
+                      тендерах.
+                    </li>
+                    <li>
+                      Доступ к экспертизе. При аутсорсинге привлекаются
+                      высококвалифицированные специалисты, имеющие большой опыт
+                      работы с тендерами в различных отраслях.
+                    </li>
+                    <li>
+                      Повышение эффективности. Профессиональные тендерные
+                      специалисты обладают необходимыми навыками и знаниями для
+                      качественной подготовки заявок, что повышает шансы на
+                      победу.
+                    </li>
+                    <li>
+                      Оперативность. Аутсорсинговая компания может быстро
+                      задействовать дополнительные ресурсы при необходимости
+                      участия в нескольких тендерах одновременно.
+                    </li>
+                    <li>
+                      Снижение рисков. Тендерные эксперты знакомы с требованиями
+                      и нюансами законодательства, регламентами тендерных
+                      процедур, что снижает риски допущения ошибок.
+                    </li>
+                  </ul>
+                  <p className="text-gray-600 mb-4">
+                    Таким образом, аутсорсинг тендеров позволяет компаниям
+                    оптимизировать расходы и сфокусироваться на основной
+                    деятельности, передав тендерные процессы профессионалам.
+                  </p>
+                </>
+              )}
+              <button
+                onClick={toggleText3}
+                className="text-blue-500 hover:text-blue-700 transition-colors duration-300 mt-4 bg-white border border-blue-500 rounded-md px-4 py-2"
+              >
+                {showFullText3 ? "Скрыть" : "Показать больше"}
+              </button>
+            </div>
             <h3
               id="training"
               className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 flex items-center"
@@ -248,7 +367,7 @@ const NewServices = () => {
                 тендерах, снизить риски и успешно развивать бизнес за счет
                 получения выгодных контрактов.
               </p>
-       
+
               {showFullText2 && (
                 <>
                   <p className="text-gray-600 mb-4">
@@ -295,41 +414,7 @@ const NewServices = () => {
                     <li>Содействие в открытии ИП/ТОО</li>
                     <li>Выдача сертификата по окончании обучения</li>
                   </ul>
-                  <div className="flex flex-col md:flex-row md:space-x-4 mb-8">
-                    <div className="w-full md:w-1/2">
-                      <h4 className="text-2xl font-bold mb-4 text-gray-800">
-                        В программу обучения входит:
-                      </h4>
-                      <div className="bg-white p-6 rounded-lg shadow-md">
-                        <ul className="list-disc list-inside text-gray-600">
-                          <li>Что такое тендер?</li>
-                          <li>Процесс закупок</li>
-                          <li>Способы закупок</li>
-                          <li>Виды обеспечений</li>
-                          <li>Практика подачи заявок</li>
-                          <li>Закрывающая документация</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="w-full md:w-1/2 mt-8 md:mt-0">
-                      <h4 className="text-2xl font-bold mb-4 text-gray-800">
-                        Чему вы научитесь?
-                      </h4>
-                      <div className="bg-white p-6 rounded-lg shadow-md">
-                        <ul className="list-disc list-inside text-gray-600">
-                          <li>Находить тендеры</li>
-                          <li>Изучать документацию</li>
-                          <li>Составлять пакет документов</li>
-                          <li>Подавать и отзывать заявки</li>
-                          <li>Работать с Законами</li>
-                          <li>Консорциум и субподряд</li>
-                          <li>Вносить обеспечения</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white p-6 rounded-lg shadow-md mb-8 flex flex-col lg:flex-row md:space-x-4 divide-y lg:divide-y-0 lg:divide-x divide-gray-300">
+                  <div className="flex flex-col lg:flex-row md:space-x-4 mb-8 divide-y lg:divide-y-0 lg:divide-x divide-gray-300">
                     <p className="text-gray-600 px-4 py-2">
                       1) Мы обучаем как начинающих специалистов, так и тех, кто
                       уже имеет солидный практический опыт в сфере тендеров.
@@ -356,7 +441,7 @@ const NewServices = () => {
                   </div>
                 </>
               )}
-                     <button
+              <button
                 onClick={toggleText2}
                 className="text-blue-500 hover:text-blue-700 transition-colors duration-300 mt-4 bg-white border border-blue-500 rounded-md px-4 py-2"
               >

@@ -68,7 +68,7 @@ const Services = () => {
                 делимся стратегиями и советами для успешного участия.
               </p>
               <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300">
-                Узнать больше
+                <a href="#consulting">Узнать больше</a>
               </button>
             </div>
             <div className="p-6 bg-white shadow-lg rounded-lg border-t-4 border-green-500">
@@ -81,7 +81,7 @@ const Services = () => {
                 документации до успешного заключения контракта.
               </p>
               <button className="mt-4 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-300">
-                Узнать больше
+                <a href="#tenders">Узнать больше</a>
               </button>
             </div>
             <div className="p-6 bg-white shadow-lg rounded-lg border-t-4 border-red-500">
@@ -94,7 +94,7 @@ const Services = () => {
                 могли сосредоточиться на своем бизнесе.
               </p>
               <button className="mt-4 px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors duration-300">
-                Узнать больше
+                <a href="#outsourcing">Узнать больше</a>
               </button>
             </div>
             <div className="p-6 bg-white shadow-lg rounded-lg border-t-4 border-yellow-500">
@@ -107,7 +107,7 @@ const Services = () => {
                 стать профессионалами в участии в тендерах.
               </p>
               <button className="mt-4 px-6 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors duration-300">
-                Узнать больше
+                <a href="#training">Узнать больше</a>
               </button>
             </div>
           </div>
