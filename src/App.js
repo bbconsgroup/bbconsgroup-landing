@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import About from "./About";
 import Services from "./Services";
 import NewServices from "./NewServices";
+import ContactUs from "./ContactUs";
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       <Navbar />
       <main>
         <About />
+        <ContactUs />
         <Services />
+        <ContactUs />
         <NewServices />
       </main>
       <Footer />
